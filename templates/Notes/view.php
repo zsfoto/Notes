@@ -1,4 +1,4 @@
-<?php // Baked at 2023.09.07. 07:15:40  ?>
+<?php // Baked at 2023.09.06. 14:37:13  ?>
 <?php
 /**
  * @var \App\View\AppView $this
@@ -29,35 +29,24 @@
 					<h3 class="card-title"><?= $title ?>: <?= h($note->name) ?></h3>
 				</div><!-- /.card-header -->
 				<div class="card-body">
-				
+
 					<div class="form-group row"><!-- 1. -->
-						<label for="name" class="col-sm-2 col-form-label"><?= __('Category') ?>:</label>
-						<div class="col-sm-9">
+						<div class="col-sm-12">
 							<div class="view-field associated">
 								<?= $note->has('category') ? $this->Html->link($note->category->name, ['controller' => 'Categories', 'action' => 'view', $note->category->id], ['escape' => false, 'class' => 'btn btn-sm btn-default']) : '&nbsp;' ?>
-							</div>
-						</div>
-					</div>
-
-					<div class="form-group row"><!-- 2. -->
-						<label for="name" class="col-sm-2 col-form-label"><?= __('Name') ?>:</label>
-						<div class="col-sm-9">
-							<div class="view-field non-associated">
-								<?php 
+								<b><?php 
 									if(!empty($note->name)){
 										echo h($note->name);
 									}else{
 										echo "&nbsp;";
 									}
-								?>
+								?></b>
 							</div>
 						</div>
 					</div>
 
-
 					<div class="form-group row"><!-- 7. -->
-						<label for="body" class="col-sm-2 col-form-label"><?= __('Body') ?>:</label>
-						<div class="col-sm-9">
+						<div class="col-sm-12">
 							<div class="view-field text show-more">
 								<?php // $this->Text->autoParagraph(h($note->body)); ?>
 								<?php

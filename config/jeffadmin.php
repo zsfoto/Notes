@@ -58,13 +58,13 @@
 				],
 
 				'sidebarMenu' => [
-
+/*
 					[
 						// --------------------- NavHeader ------------------
 						'type' 	=> 'navheader',
 						'title' => 'ADMIN',
 					],
-
+*/
 /*
 					[
 						'type' 	=> 'menuitem',

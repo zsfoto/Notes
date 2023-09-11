@@ -1,5 +1,5 @@
 <?php
-// Baked at 2023.09.06. 14:35:12
+// Baked at 2023.09.08. 10:40:11
 declare(strict_types=1);
 
 namespace App\Model\Table;

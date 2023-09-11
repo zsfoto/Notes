@@ -91,7 +91,7 @@ return static function (RouteBuilder $routes) {
 	 
     $routes->prefix('Admin', function (RouteBuilder $builder) {
         $builder->scope('/', function (RouteBuilder $builder) {
-            $builder->setExtensions(['json', 'xml', 'xlsx']);
+            //$builder->setExtensions(['json', 'xml', 'xlsx']);
 
             $builder->connect('/', ['controller' => 'Notes', 'action' => 'index']);
 

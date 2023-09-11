@@ -29,87 +29,24 @@
 					<h3 class="card-title"><?= $title ?>: <?= h($note->name) ?></h3>
 				</div><!-- /.card-header -->
 				<div class="card-body">
-				
-					<div class="form-group row">
-						<label for="name" class="col-sm-2 col-form-label"><?= __('id') ?>:</label>
-						<div class="col-sm-9">
-							<div class="view-field non-associated">
-								<?= $note->id ?>
-							</div>
-						</div>
-					</div>
+
 					<div class="form-group row"><!-- 1. -->
-						<label for="name" class="col-sm-2 col-form-label"><?= __('Category') ?>:</label>
-						<div class="col-sm-9">
+						<div class="col-sm-12">
 							<div class="view-field associated">
 								<?= $note->has('category') ? $this->Html->link($note->category->name, ['controller' => 'Categories', 'action' => 'view', $note->category->id], ['escape' => false, 'class' => 'btn btn-sm btn-default']) : '&nbsp;' ?>
-							</div>
-						</div>
-					</div>
-
-					<div class="form-group row"><!-- 2. -->
-						<label for="name" class="col-sm-2 col-form-label"><?= __('Name') ?>:</label>
-						<div class="col-sm-9">
-							<div class="view-field non-associated">
-								<?php 
+								<b><?php 
 									if(!empty($note->name)){
 										echo h($note->name);
 									}else{
 										echo "&nbsp;";
 									}
-								?>
-							</div>
-						</div>
-					</div>
-
-					<div class="form-group row"><!-- 4. -->
-						<label for="pos" class="col-sm-2 col-form-label"><?= __('Pos') ?>:</label>
-						<div class="col-sm-9">
-							<div class="view-field number">
-								<?php
-									if(!empty($note->pos)){
-										echo $this->Number->format($note->pos);
-									}else{
-										echo "&nbsp;";
-									}
-								?>
-							</div>
-						</div>
-					</div>
-
-					<div class="form-group row"><!-- 5. -->
-						<label for="created" class="col-sm-2 col-form-label"><?= __('Created') ?>:</label>
-						<div class="col-sm-9">
-							<div class="view-field date">
-								<?php
-									if(!empty($note->created)){
-										echo h($note->created);
-									}else{
-										echo "&nbsp;";
-									}
-								?>
-							</div>
-						</div>
-					</div>
-
-					<div class="form-group row"><!-- 5. -->
-						<label for="modified" class="col-sm-2 col-form-label"><?= __('Modified') ?>:</label>
-						<div class="col-sm-9">
-							<div class="view-field date">
-								<?php
-									if(!empty($note->modified)){
-										echo h($note->modified);
-									}else{
-										echo "&nbsp;";
-									}
-								?>
+								?></b>
 							</div>
 						</div>
 					</div>
 
 					<div class="form-group row"><!-- 7. -->
-						<label for="body" class="col-sm-2 col-form-label"><?= __('Body') ?>:</label>
-						<div class="col-sm-9">
+						<div class="col-sm-12">
 							<div class="view-field text show-more">
 								<?php // $this->Text->autoParagraph(h($note->body)); ?>
 								<?php
@@ -134,26 +71,6 @@
 		</div><!-- /. col-sm-10 -->
 		<!-- ################################################################################################################ -->
 
-		<!-- ################################################################################################################ -->
-		<div class="col-12">
-			<div class="card card-primary card-outline card-outline-tabs">
-
-				<div class="card-header p-0 border-bottom-0">
-					<ul class="nav nav-tabs" id="custom-tabs-four-tab" role="tablist">
-						<li class="pt-2 px-3">
-							<h3 class="card-title" style="font-size: 22px;"><?= __('Related tables') ?></h3>
-						</li>
-					</ul>
-				</div>
-
-
-				<div class="card-body p-0">
-					<div class="tab-content" id="custom-tabs-four-tabContent">
-
-					</div>
-				</div><!-- /.card -->
-			</div>
-		</div>
 
 <!-- ######################################################################################################################## -->
 <!-- ######################################################################################################################## -->
