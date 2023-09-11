@@ -2259,21 +2259,21 @@
         },
         {
             "name": "zsfoto/jeffadmin",
-            "version": "1.0.4",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zsfoto/jeffadmin.git",
-                "reference": "2bd63807c90a10c6e96edfaa780d3d0e811567ce"
+                "reference": "3ab7b6b9aca9d1f120bae7c4f5a2eba49d65b538"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zsfoto/jeffadmin/zipball/2bd63807c90a10c6e96edfaa780d3d0e811567ce",
-                "reference": "2bd63807c90a10c6e96edfaa780d3d0e811567ce",
+                "url": "https://api.github.com/repos/zsfoto/jeffadmin/zipball/3ab7b6b9aca9d1f120bae7c4f5a2eba49d65b538",
+                "reference": "3ab7b6b9aca9d1f120bae7c4f5a2eba49d65b538",
                 "shasum": ""
             },
             "require": {
-                "cakephp/cakephp": "^4.3",
-                "php": ">=7.2"
+                "cakephp/cakephp": "^4.4",
+                "php": ">=7.4"
             },
             "require-dev": {
                 "phpunit/phpunit": "^8.5 || ^9.3"
@@ -2281,19 +2281,19 @@
             "type": "cakephp-plugin",
             "autoload": {
                 "psr-4": {
-                    "JeffAdmin\\": "src/"
+                    "JeffAdmin\\": "plugins/JeffAdmin/src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
-            "description": "JeffAdmin plugin for CakePHP ^4.2",
+            "description": "JeffAdmin plugin for CakePHP ^4.4",
             "support": {
                 "issues": "https://github.com/zsfoto/jeffadmin/issues",
-                "source": "https://github.com/zsfoto/jeffadmin/tree/1.0.4"
+                "source": "https://github.com/zsfoto/jeffadmin/tree/1.1.1"
             },
-            "time": "2021-12-07T14:27:12+00:00"
+            "time": "2023-09-11T11:31:23+00:00"
         }
     ],
     "packages-dev": [
