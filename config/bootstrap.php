@@ -39,6 +39,7 @@ use Cake\Database\TypeFactory;
 use Cake\Datasource\ConnectionManager;
 use Cake\Error\ErrorTrap;
 use Cake\Error\ExceptionTrap;
+//use Cake\I18n\FrozenTime;
 use Cake\Http\ServerRequest;
 use Cake\Log\Log;
 use Cake\Mailer\Mailer;
@@ -221,6 +222,8 @@ TypeFactory::map('time', StringType::class);
 //Inflector::rules('plural', ['/^(inflect)or$/i' => '\1ables']);
 //Inflector::rules('irregular', ['red' => 'redlings']);
 //Inflector::rules('uninflected', ['dontinflectme']);
+
+//FrozenTime::setToStringFormat('yyyy. MM. dd. HH:mm');  // For any immutable DateTim
 
 try {
 	Configure::load('jeffadmin', 'default');

@@ -78,7 +78,7 @@ class NotesTable extends Table
 
         $validator
             ->scalar('body')
-            ->maxLength('body', 4294967295)
+            //->maxLength('body', 4294967295)
             ->requirePresence('body', 'create')
             ->notEmptyString('body');
 
