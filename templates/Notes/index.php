@@ -19,7 +19,7 @@
 	//$config['index_show_visible'] 	= true;
 	//$config['index_show_pos'] 		= true;
 	//$config['index_show_created'] 	= true;
-	//$config['index_show_modified'] 	= true;
+	$config['index_show_modified'] 	= true;
 	//$config['index_show_counts'] 		= true;
 	//$config['index_show_actions'] 	= true;	
 	//$config['index_enable_view'] 		= true;
